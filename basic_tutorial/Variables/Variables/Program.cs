@@ -73,6 +73,17 @@ namespace Variables
                 Console.WriteLine(number);
             }
 
+            int j = 0;
+            while(j++ < 2)
+            {
+                Console.WriteLine($"While writting...{j}");
+            }
+
+            do
+            {
+                Console.WriteLine($"Do While writting...{j}");
+            } while (j++ < 5);
+
 
 
         }
