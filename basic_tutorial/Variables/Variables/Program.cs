@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Variables
 {
@@ -40,6 +41,13 @@ namespace Variables
                     Console.WriteLine("I'm not zero");
                     break;
             }
+
+            int[] emptyArray = new int[5];
+            int[] arrayNumbers = new int[] { 1, 2, 3, 4, 5 };
+
+            List<int> intList = new List<int>() { 1, 2, 3};
+            intList.Add(5);
+            intList.Remove(1);
         }
 
         // Function returning nothing
