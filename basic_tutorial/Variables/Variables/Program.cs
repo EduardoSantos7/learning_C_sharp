@@ -5,6 +5,14 @@ namespace Variables
 {
     class Program
     {
+        // Enums
+        enum Doctor
+        {
+            Speciality,
+            Phone
+        }
+        static Doctor mainDoctor;
+
         static void Main(string[] args)
         {
             // Variables
@@ -84,6 +92,14 @@ namespace Variables
                 Console.WriteLine($"Do While writting...{j}");
             } while (j++ < 5);
 
+            // Enums
+            switch(mainDoctor)
+            {
+                case Doctor.Phone:
+                    break;
+                case Doctor.Speciality:
+                    break;
+            }
 
 
         }
