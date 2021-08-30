@@ -14,7 +14,7 @@ namespace Variables
 
             // Functions
             Nothing();
-            bool bigger = isBiggerThan(5, 7);
+            bool bigger = isBiggerThan(number1, number2);
             Console.WriteLine($"{number1} > {number2}: " + bigger);
 
             // Conditions
@@ -48,6 +48,33 @@ namespace Variables
             List<int> intList = new List<int>() { 1, 2, 3};
             intList.Add(5);
             intList.Remove(1);
+
+            // Loops
+            Console.WriteLine("I'm the array number:");
+            foreach (int number in arrayNumbers)
+            {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine("I'm the empty array:");
+            foreach (int number in emptyArray)
+            {
+                Console.WriteLine(number);
+            }
+
+            // Fill the empty array with the double of array of number
+            for(int i = 0; i < arrayNumbers.Length; i++)
+            {
+                emptyArray[i] = arrayNumbers[i] * 2;
+            }
+
+            Console.WriteLine("I'm the empty array after be filled:");
+            foreach (int number in emptyArray)
+            {
+                Console.WriteLine(number);
+            }
+
+
+
         }
 
         // Function returning nothing
