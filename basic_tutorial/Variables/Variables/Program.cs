@@ -101,6 +101,12 @@ namespace Variables
                     break;
             }
 
+            // Classes
+            House myFirstHouse = new House();
+            myFirstHouse.numRooms = 5;
+            bool isClean = myFirstHouse.isClean();
+            Console.WriteLine($"Is the house clean? : {isClean}");
+
 
         }
 
@@ -113,6 +119,19 @@ namespace Variables
         static bool isBiggerThan(int number, int target)
         {
             return number > target;
+        }
+   
+        // Classes
+        class House
+        {
+            public string address;
+            public int zipcode;
+            public int numRooms;
+
+            public bool isClean()
+            {
+                return true;
+            }
         }
     }
 }
