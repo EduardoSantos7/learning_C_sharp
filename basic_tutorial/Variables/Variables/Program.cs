@@ -15,6 +15,31 @@ namespace Variables
             Nothing();
             bool bigger = isBiggerThan(5, 7);
             Console.WriteLine($"{number1} > {number2}: " + bigger);
+
+            // Conditions
+            if (bigger)
+            {
+                Console.WriteLine($"{number1} is bigger");
+            }
+            else
+            {
+                Console.WriteLine($"{number2} is bigger");
+            }
+
+            if(bigger && number1 > 0)
+            {
+                Console.WriteLine($"{number1} I'm bigger but also positive");
+            }
+
+            switch(number1)
+            {
+                case 0:
+                    Console.WriteLine("I'm zero");
+                    break;
+                default:
+                    Console.WriteLine("I'm not zero");
+                    break;
+            }
         }
 
         // Function returning nothing
