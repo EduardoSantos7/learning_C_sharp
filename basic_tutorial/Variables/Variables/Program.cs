@@ -6,12 +6,12 @@ namespace Variables
     class Program
     {
         // Enums
-        enum Doctor
+        enum BodyPart
         {
-            Speciality,
-            Phone
+            Hart,
+            Eye
         }
-        static Doctor mainDoctor;
+        static BodyPart mainBodyPart;
 
         static void Main(string[] args)
         {
@@ -93,11 +93,13 @@ namespace Variables
             } while (j++ < 5);
 
             // Enums
-            switch(mainDoctor)
+            BodyPart part = BodyPart.Hart;
+            Console.WriteLine($"Part is: {part}");
+            switch (mainBodyPart)
             {
-                case Doctor.Phone:
+                case BodyPart.Hart:
                     break;
-                case Doctor.Speciality:
+                case BodyPart.Eye:
                     break;
             }
 
