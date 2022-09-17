@@ -1,0 +1,20 @@
+[
+    {
+        "Id": 1,
+        "Maker": "Toyota",
+        "Model": "Yaris",
+        "Year": 2007
+    },
+    {
+        "Id": 2,
+        "Maker": "Ford",
+        "Model": "Fusion",
+        "Year": 2012
+    },
+    {
+        "Id": 3,
+        "Maker": "Mercedes",
+        "Model": "CLA 250",
+        "Year": 2020
+    }
+]
