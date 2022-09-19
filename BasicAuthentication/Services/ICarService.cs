@@ -1,6 +1,8 @@
+using BasicAuthentication.Models;
+
 namespace BasicAuthentication.Services
 {
-    public class ICarsService
+    public interface ICarService
     {
         public Task<List<Car>> Get();
     }
